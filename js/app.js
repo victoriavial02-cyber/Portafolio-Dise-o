@@ -1,9 +1,9 @@
 const slides = [
-  { img: "img/trabajo/fotografia.jpg", title: "Fotografía", role: "Fotografía, Dirección de Arte" },
-  { img: "img/trabajo/angelica-nielsen.jpg", title: "Angélica Nielsen", role: "Fotografía, Diseño" },
-  { img: "img/trabajo/polo-los-maitenes.jpg", title: "Polo Los Maitenes", role: "Fotografía, Dirección de Arte" },
-  { img: "img/trabajo/vina-panqueco.jpg", title: "Viña Panqueco", role: "Fotografía, Diseño" },
-  { img: "img/trabajo/letreros-rancho.jpg", title: "Letreros Rancho", role: "Fotografía" },
+  { img: "img/trabajo/fotografia.jpg", title: "fotografía", role: "Fotografía, Dirección de Arte" },
+  { img: "img/trabajo/angelica-nielsen.jpg", title: "angélica nielsen", role: "Fotografía, Diseño" },
+  { img: "img/trabajo/polo-los-maitenes.jpg", title: "polo los maitenes", role: "Fotografía, Dirección de Arte" },
+  { img: "img/trabajo/vina-panqueco.jpg", title: "viña panqueco", role: "Fotografía, Diseño" },
+  { img: "img/trabajo/letreros-rancho.jpg", title: "letrero viña río bueno", role: "Fotografía" },
 ];
 
 let current = 0;

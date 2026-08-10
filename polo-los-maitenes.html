@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Polo los Maitenes — Victoria Vial</title>
+  <link rel="stylesheet" href="https://use.typekit.net/cnv4ylo.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="top-nav">
+    <a class="back-link" href="index.html">← Inicio</a>
+    <nav>
+      <a href="index.html#inicio">inicio</a>
+      <a href="index.html#trabajo">trabajo</a>
+      <a href="contacto.html">contacto</a>
+    </nav>
+  </header>
+
+  <section class="project-page">
+    <h1 class="project-title">Logo Polo los Maitenes</h1>
+
+    <div class="project-slider">
+      <div class="slider-nav">
+        <button id="prev" type="button">[ Anterior ]</button>
+        <span id="counter">1 de 6</span>
+        <button id="next" type="button">[ Siguiente ]</button>
+      </div>
+      <div class="slider-image">
+        <img id="slide-img" src="img/trabajo/polo-los-maitenes/01.jpg" alt="Logo Polo los Maitenes">
+      </div>
+    </div>
+  </section>
+
+  <script src="js/project.js"></script>
+  <script>
+    initProjectSlider([
+      "img/trabajo/polo-los-maitenes/01.jpg",
+      "img/trabajo/polo-los-maitenes/02.jpg",
+      "img/trabajo/polo-los-maitenes/03.jpg",
+      "img/trabajo/polo-los-maitenes/04.jpg",
+      "img/trabajo/polo-los-maitenes/05.jpg",
+      "img/trabajo/polo-los-maitenes/06.jpg"
+    ]);
+  </script>
+</body>
+</html>

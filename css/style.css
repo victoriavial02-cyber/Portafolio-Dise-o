@@ -31,13 +31,14 @@ a {
 
 .top-nav {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
   padding: 2rem 3rem 0;
 }
 
 .top-nav nav {
   display: flex;
   gap: 1.75rem;
+  margin-left: auto;
 }
 
 .top-nav a {
@@ -84,8 +85,10 @@ a {
 
 .hero-info .tagline {
   margin-top: 0.75rem;
-  font-family: var(--serif-text);
+  font-family: var(--sans);
   font-size: 1rem;
+  font-variant: small-caps;
+  font-feature-settings: "smcp";
 }
 
 /* ---------- Gallery strip ---------- */
@@ -93,6 +96,7 @@ a {
 .gallery-strip {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  padding-bottom: clamp(4rem, 12vw, 9rem);
 }
 
 .gallery-item {
@@ -117,48 +121,29 @@ a {
   display: block;
 }
 
-/* ---------- Archive / about + slider ---------- */
+/* ---------- Project pages ---------- */
 
-.archive {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  padding: 6rem 3rem;
-}
-
-.archive-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 420px;
-}
-
-.eyebrow {
-  font-family: var(--serif);
-  font-size: 0.9rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.bio {
-  font-size: 0.9rem;
-  color: var(--text);
-  margin-top: auto;
-  padding-top: 4rem;
-}
-
-.enter-link {
-  margin-top: 2rem;
+.back-link {
   font-size: 0.85rem;
-  display: inline-block;
 }
 
-.enter-link:hover {
+.back-link:hover {
   color: var(--muted);
 }
 
-.archive-right {
-  max-width: 420px;
+.project-page {
+  padding: 3rem;
+}
+
+.project-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 2rem 0 3rem;
+}
+
+.project-slider {
+  max-width: 700px;
 }
 
 .slider-nav {
@@ -190,31 +175,17 @@ a {
 
 .slider-image {
   margin-top: 1.5rem;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .slider-image img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 55vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   display: block;
-}
-
-.slide-caption {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.75rem;
-  font-size: 0.75rem;
-  color: var(--muted);
-}
-
-#slide-title {
-  font-variant: small-caps;
-  font-feature-settings: "smcp";
-}
-
-#slide-role {
-  text-align: right;
 }
 
 /* ---------- Contact page ---------- */
@@ -283,9 +254,6 @@ a {
   }
   .gallery-item {
     padding-bottom: 1.25rem;
-  }
-  .archive {
-    grid-template-columns: 1fr;
   }
   .hero {
     padding: 2rem 1.5rem;

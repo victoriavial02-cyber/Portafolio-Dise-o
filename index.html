@@ -3,50 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Victoria Vial — Portafolio</title>
+  <title>Victoria Vial — Diseño y Fotografía</title>
+
+  <!-- Adobe Fonts (Ogg): reemplazá esta línea por el <link> de tu propio kit de Adobe Fonts -->
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/TU-KIT-ID.css"> -->
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Victoria Vial</h1>
-    <p>Fotografía</p>
+  <header class="top-nav">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#trabajo">Trabajo</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <nav class="nav">
-    <a href="#fotografia">Fotografía</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <section class="hero" id="inicio">
+    <h1>Victoria Vial</h1>
+    <div class="hero-info">
+      <p>Diseñadora Integral</p>
+      <p>Pontificia Universidad Católica de Chile</p>
+      <p><a href="mailto:victoriavial02@gmail.com">victoriavial02@gmail.com</a></p>
+      <p class="tagline">Diseño y Fotografía</p>
+    </div>
+  </section>
 
-  <main>
-    <section id="fotografia">
-      <h2>Fotografía</h2>
-      <div class="gallery">
-        <!-- Agregá tus imágenes acá, por ejemplo: -->
-        <!-- <img src="img/fotografia/01.jpg" alt="Descripción de la foto"> -->
-        <div class="gallery-placeholder">Agregá tus fotos en img/fotografia/ y enlazalas acá</div>
+  <section class="gallery-strip" id="trabajo">
+    <a class="gallery-item" href="#">
+      <span class="label">Fotografía</span>
+      <img src="img/trabajo/fotografia.jpg" alt="Fotografía">
+    </a>
+    <a class="gallery-item" href="#">
+      <span class="label">Angélica Nielsen</span>
+      <img src="img/trabajo/angelica-nielsen.jpg" alt="Angélica Nielsen">
+    </a>
+    <a class="gallery-item" href="#">
+      <span class="label">Polo Los Maitenes</span>
+      <img src="img/trabajo/polo-los-maitenes.jpg" alt="Polo Los Maitenes">
+    </a>
+    <a class="gallery-item" href="#">
+      <span class="label">Viña Panqueco</span>
+      <img src="img/trabajo/vina-panqueco.jpg" alt="Viña Panqueco">
+    </a>
+    <a class="gallery-item" href="#">
+      <span class="label"><em>Letreros Rancho</em></span>
+      <img src="img/trabajo/letreros-rancho.jpg" alt="Letreros Rancho">
+    </a>
+  </section>
+
+  <section class="archive" id="sobre-mi">
+    <div class="archive-left">
+      <p class="eyebrow">[ El Archivo ]</p>
+      <p class="bio">
+        Diseño experiencias visuales que combinan narrativa, estética y
+        estrategia. Mi trabajo abarca fotografía, dirección de arte y
+        diseño — creando imágenes precisas y sofisticadas para marcas
+        y proyectos que comunican a través de la belleza y la precisión.
+      </p>
+      <a href="#trabajo" class="enter-link">Entrar al archivo →</a>
+    </div>
+
+    <div class="archive-right">
+      <div class="slider-nav">
+        <button id="prev" type="button">[ Anterior ]</button>
+        <span id="counter">1 de 5</span>
+        <button id="next" type="button">[ Siguiente ]</button>
       </div>
-    </section>
-
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <div class="gallery">
-        <!-- Ejemplo de proyecto -->
-        <!-- <img src="img/proyectos/vina-panqueco-01.jpg" alt="Viña Panqueco"> -->
-        <div class="gallery-placeholder">Agregá tus proyectos acá</div>
+      <div class="slider-image">
+        <img id="slide-img" src="img/trabajo/fotografia.jpg" alt="Fotografía">
       </div>
-    </section>
+      <div class="slide-caption">
+        <span id="slide-title">Fotografía</span>
+        <span id="slide-role">Fotografía, Dirección de Arte</span>
+      </div>
+    </div>
+  </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Email: <a href="mailto:victoriavial02@gmail.com">victoriavial02@gmail.com</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Victoria Vial</p>
+  <footer class="contacto" id="contacto">
+    <p>Victoria Vial — Diseño y Fotografía</p>
+    <p><a href="mailto:victoriavial02@gmail.com">victoriavial02@gmail.com</a></p>
+    <p class="copyright">&copy; 2026</p>
   </footer>
 
+  <script src="js/app.js"></script>
 </body>
 </html>

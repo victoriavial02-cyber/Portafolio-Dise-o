@@ -3,7 +3,7 @@
   --text: #1a1a1a;
   --muted: #7a7a7a;
   --line: #e2e2e2;
-  --serif: 'Ogg', 'Georgia', 'Times New Roman', serif;
+  --serif: "ogg", 'Georgia', 'Times New Roman', serif;
   --sans: 'Helvetica Neue', Arial, sans-serif;
 }
 

@@ -61,12 +61,12 @@ a {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem 3rem;
-  padding-bottom: clamp(6rem, 18vw, 14rem);
+  padding-bottom: clamp(8rem, 24vw, 18rem);
 }
 
 .hero h1 {
   font-family: var(--serif);
-  font-weight: 400;
+  font-weight: 100;
   font-size: clamp(3rem, 8vw, 6rem);
   line-height: 1;
 }
@@ -125,6 +125,8 @@ a {
 
 .back-link {
   font-size: 0.85rem;
+  font-variant: small-caps;
+  font-feature-settings: "smcp";
 }
 
 .back-link:hover {
@@ -136,10 +138,13 @@ a {
 }
 
 .project-title {
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-weight: 400;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  margin: 2rem 0 3rem;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  font-variant: small-caps;
+  font-feature-settings: "smcp";
+  margin: 2rem 0 2rem;
 }
 
 .project-slider {

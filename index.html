@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Victoria Vial — Diseño y Fotografía</title>
 
-  <!-- Adobe Fonts (Ogg, Ogg Text, Macho) -->
+  <!-- Adobe Fonts (Ogg, Ogg Text, Ogg Thin, Macho) -->
   <link rel="stylesheet" href="https://use.typekit.net/cnv4ylo.css">
 
   <link rel="stylesheet" href="css/style.css">
@@ -21,37 +21,237 @@
   </header>
 
   <section class="hero" id="inicio">
-    <h1>Victoria Vial</h1>
+    <div class="hero-left">
+      <h1>Victoria Vial</h1>
+      <div class="work-tabs">
+        <button type="button" class="work-tab active" data-tab="diseno">diseño</button>
+        <button type="button" class="work-tab" data-tab="fotografia">fotografía</button>
+      </div>
+    </div>
     <div class="hero-info">
       <p>Diseñadora Integral</p>
       <p>Pontificia Universidad Católica de Chile</p>
       <p><a href="mailto:victoriavial02@gmail.com">victoriavial02@gmail.com</a></p>
-      <p class="tagline">diseño y fotografía</p>
     </div>
   </section>
 
-  <section class="gallery-strip" id="trabajo">
-    <a class="gallery-item" href="fotografia.html">
-      <span class="label">fotografía</span>
-      <img src="img/trabajo/fotografia.jpg" alt="Fotografía">
-    </a>
-    <a class="gallery-item" href="angelica-nielsen.html">
-      <span class="label">láminas acuarela botánica</span>
-      <img src="img/trabajo/angelica-nielsen.jpg" alt="Láminas Acuarela Botánica">
-    </a>
-    <a class="gallery-item" href="polo-los-maitenes.html">
-      <span class="label">logo polo los maitenes</span>
-      <img src="img/trabajo/polo-los-maitenes.jpg" alt="Logo Polo los Maitenes">
-    </a>
-    <a class="gallery-item" href="vina-panqueco.html">
-      <span class="label">etiqueta vino viña panqueco</span>
-      <img src="img/trabajo/vina-panqueco.jpg" alt="Etiqueta Vino Viña Panqueco">
-    </a>
-    <a class="gallery-item" href="letrero-vina-rio-bueno.html">
-      <span class="label">letreros viña río bueno</span>
-      <img src="img/trabajo/letreros-rancho.jpg" alt="Letreros Viña Río Bueno">
-    </a>
+  <section id="trabajo">
+
+    <div class="work-panel" id="panel-diseno">
+      <div class="gallery-strip">
+        <a class="gallery-item" href="angelica-nielsen.html">
+          <span class="label">láminas acuarela botánica</span>
+          <img src="img/trabajo/angelica-nielsen.jpg" alt="Láminas Acuarela Botánica" loading="lazy">
+        </a>
+        <a class="gallery-item" href="polo-los-maitenes.html">
+          <span class="label">logo polo los maitenes</span>
+          <img src="img/trabajo/polo-los-maitenes.jpg" alt="Logo Polo los Maitenes" loading="lazy">
+        </a>
+        <a class="gallery-item" href="vina-panqueco.html">
+          <span class="label">etiqueta vino viña panqueco</span>
+          <img src="img/trabajo/vina-panqueco.jpg" alt="Etiqueta Vino Viña Panqueco" loading="lazy">
+        </a>
+        <a class="gallery-item" href="letrero-vina-rio-bueno.html">
+          <span class="label">letreros viña río bueno</span>
+          <img src="img/trabajo/letreros-rancho.jpg" alt="Letreros Viña Río Bueno" loading="lazy">
+        </a>
+      </div>
+    </div>
+
+    <div class="work-panel" id="panel-fotografia" hidden>
+      <div class="photo-filter">
+        <button type="button" class="filter-btn active" data-filter="todas">todas</button>
+        <button type="button" class="filter-btn" data-filter="arquitectura">arquitectura</button>
+        <button type="button" class="filter-btn" data-filter="espacio-objetos">espacio y objetos</button>
+        <button type="button" class="filter-btn" data-filter="social-eventos">social y eventos</button>
+        <button type="button" class="filter-btn" data-filter="naturaleza">naturaleza</button>
+        <button type="button" class="filter-btn" data-filter="preparaciones-alimentos">preparaciones y alimentos</button>
+        <button type="button" class="filter-btn" data-filter="tienda-clara">tienda clara</button>
+      </div>
+      <div class="photo-grid" id="photo-grid">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/001.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/002.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/003.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/004.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/005.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/006.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/007.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/008.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/009.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/010.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/011.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/012.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/013.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/014.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/015.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/016.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/017.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/018.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/019.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/020.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/021.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/022.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="arquitectura" src="img/trabajo/fotografia/arquitectura/023.jpg" alt="Arquitectura" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/001.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/002.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/003.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/004.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/005.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/006.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/007.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/008.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/009.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/010.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/011.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/012.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/013.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/014.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/015.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/016.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/017.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/018.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/019.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/020.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/021.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/022.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/023.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/024.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/025.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/026.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/027.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/028.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="espacio-objetos" src="img/trabajo/fotografia/espacio-objetos/029.jpg" alt="Espacio y Objetos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/001.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/002.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/003.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/004.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/005.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/006.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/007.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/008.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/009.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/010.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/011.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/012.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/013.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/014.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/015.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/016.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/017.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/018.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/019.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/020.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/021.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/022.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/023.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/024.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/025.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/026.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/027.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/028.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/029.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="social-eventos" src="img/trabajo/fotografia/social-eventos/030.jpg" alt="Social y Eventos" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/001.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/002.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/003.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/004.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/005.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/006.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/007.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/008.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/009.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/010.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/011.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/012.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/013.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/014.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/015.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/016.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/017.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/018.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/019.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/020.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/021.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/022.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/023.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/024.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/025.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/026.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/027.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/028.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/029.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/030.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/031.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/032.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/033.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/034.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/035.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/036.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/037.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/038.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/039.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/040.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/041.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/042.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/043.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/044.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/045.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/046.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/047.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/048.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/049.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/050.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/051.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/052.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/053.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/054.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/055.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/056.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/057.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/058.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/059.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/060.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="naturaleza" src="img/trabajo/fotografia/naturaleza/061.jpg" alt="Naturaleza" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/001.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/002.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/003.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/004.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/005.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/006.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/007.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/008.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/009.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/010.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/011.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/013.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/016.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/017.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/019.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/020.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/021.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/022.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/023.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/024.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/025.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/028.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/029.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/032.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/033.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/034.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/035.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/036.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="preparaciones-alimentos" src="img/trabajo/fotografia/preparaciones-alimentos/037.jpg" alt="Preparaciones y Alimentos" loading="lazy">
+        <img class="photo-grid-item" data-category="tienda-clara" src="img/trabajo/fotografia/tienda-clara/001.jpg" alt="Tienda Clara" loading="lazy">
+        <img class="photo-grid-item" data-category="tienda-clara" src="img/trabajo/fotografia/tienda-clara/002.jpg" alt="Tienda Clara" loading="lazy">
+        <img class="photo-grid-item" data-category="tienda-clara" src="img/trabajo/fotografia/tienda-clara/003.jpg" alt="Tienda Clara" loading="lazy">
+        <img class="photo-grid-item" data-category="tienda-clara" src="img/trabajo/fotografia/tienda-clara/004.jpg" alt="Tienda Clara" loading="lazy">
+        <img class="photo-grid-item" data-category="tienda-clara" src="img/trabajo/fotografia/tienda-clara/005.jpg" alt="Tienda Clara" loading="lazy">
+        <img class="photo-grid-item" data-category="tienda-clara" src="img/trabajo/fotografia/tienda-clara/006.jpg" alt="Tienda Clara" loading="lazy">
+      </div>
+    </div>
+
   </section>
 
+  <script src="js/site.js"></script>
 </body>
 </html>

@@ -64,11 +64,45 @@ a {
   padding-bottom: clamp(8rem, 24vw, 18rem);
 }
 
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
 .hero h1 {
   font-family: var(--serif);
   font-weight: 100;
   font-size: clamp(3rem, 8vw, 6rem);
   line-height: 1;
+}
+
+.work-tabs {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.work-tab {
+  background: none;
+  border: none;
+  padding: 0 0 0.25rem;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  font-variant: small-caps;
+  font-feature-settings: "smcp";
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+}
+
+.work-tab:hover {
+  color: var(--text);
+}
+
+.work-tab.active {
+  color: var(--text);
+  border-bottom-color: var(--text);
 }
 
 .hero-info {
@@ -83,19 +117,11 @@ a {
   color: var(--muted);
 }
 
-.hero-info .tagline {
-  margin-top: 0.75rem;
-  font-family: var(--sans);
-  font-size: 1rem;
-  font-variant: small-caps;
-  font-feature-settings: "smcp";
-}
-
 /* ---------- Gallery strip ---------- */
 
 .gallery-strip {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding-bottom: clamp(4rem, 12vw, 9rem);
 }
 
@@ -119,6 +145,74 @@ a {
   aspect-ratio: 3 / 4;
   object-fit: cover;
   display: block;
+}
+
+/* ---------- Photo filter + grid ---------- */
+
+.photo-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0 3rem 2rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  padding: 0 0 0.5rem;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  font-variant: small-caps;
+  font-feature-settings: "smcp";
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+}
+
+.filter-btn:hover {
+  color: var(--text);
+}
+
+.filter-btn.active {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+.photo-grid {
+  column-count: 2;
+  column-gap: 0.75rem;
+  padding: 0 3rem;
+  padding-bottom: clamp(4rem, 12vw, 9rem);
+}
+
+.photo-grid-item {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0.75rem;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+@media (min-width: 640px) {
+  .photo-grid {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .photo-grid {
+    column-count: 4;
+  }
+}
+
+@media (min-width: 1300px) {
+  .photo-grid {
+    column-count: 5;
+  }
 }
 
 /* ---------- Project pages ---------- */

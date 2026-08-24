@@ -238,60 +238,62 @@ a {
   padding: 3rem;
 }
 
+.project-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.project-info {
+  max-width: 480px;
+}
+
 .project-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.project-description {
   font-family: var(--sans);
   font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 0.03em;
-  font-variant: small-caps;
-  font-feature-settings: "smcp";
-  margin: 2rem 0 2rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
-.project-slider {
-  max-width: 700px;
-}
-
-.slider-nav {
+.project-photos {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 0.75rem;
-  font-size: 0.75rem;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 560px;
 }
 
-.slider-nav button {
-  background: none;
-  border: none;
-  font: inherit;
-  font-family: var(--serif);
-  color: inherit;
-  cursor: pointer;
-  padding: 0;
-}
-
-.slider-nav button:hover {
-  color: var(--muted);
-}
-
-.slider-nav #counter {
-  font-family: var(--sans);
-}
-
-.slider-image {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.slider-image img {
-  max-width: 100%;
-  max-height: 55vh;
-  width: auto;
+.project-photos img {
+  width: 100%;
   height: auto;
-  object-fit: contain;
   display: block;
+}
+
+@media (min-width: 900px) {
+  .project-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5rem;
+  }
+
+  .project-info {
+    flex: 0 0 320px;
+    position: sticky;
+    top: 3rem;
+  }
+
+  .project-photos {
+    flex: 0 1 560px;
+    min-width: 0;
+  }
 }
 
 /* ---------- Contact page ---------- */

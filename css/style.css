@@ -188,13 +188,37 @@ a {
   padding-bottom: clamp(4rem, 12vw, 9rem);
 }
 
+.photo-item {
+  position: relative;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
 .photo-grid-item {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 0.75rem;
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
+}
+
+.photo-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  padding: 0.85rem 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover .photo-overlay {
+  transform: translateY(0);
 }
 
 @media (min-width: 640px) {

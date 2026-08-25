@@ -267,13 +267,28 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 560px;
 }
 
 .project-photos img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.project-photos > img {
+  max-width: 560px;
+}
+
+.photo-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.photo-row img {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
 }
 
 @media (min-width: 900px) {
@@ -291,7 +306,7 @@ a {
   }
 
   .project-photos {
-    flex: 0 1 560px;
+    flex: 0 1 760px;
     min-width: 0;
   }
 }

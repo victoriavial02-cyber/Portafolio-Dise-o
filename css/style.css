@@ -246,6 +246,7 @@ a {
 
 .project-info {
   max-width: 480px;
+  order: -1;
 }
 
 .project-title {
@@ -303,6 +304,7 @@ a {
     flex: 0 0 320px;
     position: sticky;
     top: 3rem;
+    order: 0;
   }
 
   .project-photos {

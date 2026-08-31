@@ -24,27 +24,16 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 const photoGrid = document.getElementById("photo-grid");
 const photoItems = Array.from(document.querySelectorAll(".photo-item"));
 
-// Shuffle photos within each category once on load (keeping the category
-// blocks in their original order) so photos from the same event/subfolder
-// don't all appear bunched together. This reorders both the array we use
-// for layout below AND the actual DOM nodes, so filtering/keyboard order
-// stay consistent with what's on screen.
+// Shuffle all photos together once on load, regardless of category, so the
+// "todas" view mixes events/subfolders instead of showing them in blocks.
+// This reorders both the array we use for layout below AND the actual DOM
+// nodes, so filtering/keyboard order stay consistent with what's on screen.
 if (photoGrid) {
-  const categoryOrder = [];
-  photoItems.forEach((item) => {
-    const cat = item.dataset.category;
-    if (!categoryOrder.includes(cat)) categoryOrder.push(cat);
-  });
-
-  const shuffled = [];
-  categoryOrder.forEach((cat) => {
-    const group = photoItems.filter((item) => item.dataset.category === cat);
-    for (let i = group.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [group[i], group[j]] = [group[j], group[i]];
-    }
-    shuffled.push(...group);
-  });
+  const shuffled = photoItems.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
 
   shuffled.forEach((item) => photoGrid.appendChild(item));
   photoItems.length = 0;
